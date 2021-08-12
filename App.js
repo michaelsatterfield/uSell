@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, SafeAreaView,Image } from 'react-native';
-// import AnimatedButton from './components/AnimatedButton'
+import { StyleSheet, Text, View, SafeAreaView, Image, TouchableOpacity, TouchableHighlight, Button, Alert} from 'react-native';
+import AnimatedButton from './components/AnimatedButton'
 
 
 export default function App() {
@@ -14,19 +14,24 @@ const handlePress = () => console.log("Text Clicked");
     <SafeAreaView style={styles.container}>
       <Text numberOfLines={1} onPress={handlePress} style={styles.titleText}>uSell</Text>
       <Text>Michael Satterfield</Text>
+      <TouchableHighlight onPress={()=> alert("Picture pressed")}>
       <Image
-          blurRadius={2}
+          // blurRadius={2}
           fadeDuration={1000}
           source={{
         width:200,
         height:300,
         borderRadius: 100,
           uri: "https://picsum.photos/200/300"
-
         }}/>
       {/*<Image source={require("./assets/favicon.png")}/>*/}
+      </TouchableHighlight>
+      <Button title={"Start"}
+              onPress={()=> Alert.alert("My Title", "My Message", [
+                {}
+              ])}/>
       <StatusBar style="auto" />
-      {/*<AnimatedButton/>*/}
+      <AnimatedButton/>
     </SafeAreaView>
   );
 }

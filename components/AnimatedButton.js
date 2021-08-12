@@ -62,5 +62,8 @@ const styles = StyleSheet.create({
     }
 });
 
-export default AnimatedButton();
+export default AnimatedButton;
+
+
+
 
