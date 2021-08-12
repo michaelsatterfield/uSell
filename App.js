@@ -1,20 +1,38 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView, Image, TouchableOpacity, TouchableHighlight, Button, Alert} from 'react-native';
+import AnimatedButton from './components/AnimatedButton'
 
 
 export default function App() {
-let x =1
+const handlePress = () => console.log("Text Clicked");
   //only use console logs during development not production
   console.log("app executed")
 
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.titleText}>uSell</Text>
+    <SafeAreaView style={styles.container}>
+      <Text numberOfLines={1} onPress={handlePress} style={styles.titleText}>uSell</Text>
       <Text>Michael Satterfield</Text>
+      <TouchableHighlight onPress={()=> alert("Picture pressed")}>
+      <Image
+          // blurRadius={2}
+          fadeDuration={1000}
+          source={{
+        width:200,
+        height:300,
+        borderRadius: 100,
+          uri: "https://picsum.photos/200/300"
+        }}/>
+      {/*<Image source={require("./assets/favicon.png")}/>*/}
+      </TouchableHighlight>
+      <Button title={"Start"}
+              onPress={()=> Alert.alert("My Title", "My Message", [
+                {}
+              ])}/>
       <StatusBar style="auto" />
-    </View>
+      <AnimatedButton/>
+    </SafeAreaView>
   );
 }
 
@@ -26,6 +44,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   titleText: {
+
     fontSize: 100,
     fontWeight: 'bold',
     fontFamily: 'Roboto',
