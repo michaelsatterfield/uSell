@@ -1,6 +1,6 @@
-import { StatusBar } from 'expo-status-bar';
+
 import React from 'react';
-import { StyleSheet, Text, View, SafeAreaView, Image, TouchableOpacity, TouchableHighlight, Button, Alert} from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView, Image, TouchableOpacity, TouchableHighlight, Button, Alert, Platform, StatusBar} from 'react-native';
 import AnimatedButton from './components/AnimatedButton'
 
 
@@ -43,6 +43,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#f55252',
     alignItems: 'center',
     justifyContent: 'center',
+    paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
+
   },
   titleText: {
 
