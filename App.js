@@ -1,6 +1,6 @@
-import { StatusBar } from 'expo-status-bar';
+
 import React from 'react';
-import { StyleSheet, Text, View, SafeAreaView, Image, TouchableOpacity, TouchableHighlight, Button, Alert} from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView, Image, TouchableOpacity, TouchableHighlight, Button, Alert, Platform, StatusBar} from 'react-native';
 import AnimatedButton from './components/AnimatedButton'
 
 
@@ -11,10 +11,11 @@ const handlePress = () => console.log("Text Clicked");
 
 
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView style={[styles.container, containerStyle]}>
       <Text numberOfLines={1} onPress={handlePress} style={styles.titleText}>uSell</Text>
       <Text>Michael Satterfield</Text>
       <TouchableHighlight onPress={()=> alert("Picture pressed")}>
+        
       <Image
           // blurRadius={2}
           fadeDuration={1000}
@@ -27,14 +28,14 @@ const handlePress = () => console.log("Text Clicked");
       {/*<Image source={require("./assets/favicon.png")}/>*/}
       </TouchableHighlight>
       <Button title={"Start"}
-              onPress={()=> Alert.alert("My Title", "My Message", [
-                {}
-              ])}/>
+              onPress={()=> Alert.prompt("My Title", "My Message", text => console.log(text))}
+              />
       <StatusBar style="auto" />
       <AnimatedButton/>
     </SafeAreaView>
   );
 }
+const containerStyle = {backgroundColor: "red"}
 
 const styles = StyleSheet.create({
   container: {
@@ -42,6 +43,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#f55252',
     alignItems: 'center',
     justifyContent: 'center',
+    paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
+
   },
   titleText: {
 
