@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     },
     fadingContainer: {
         padding: 20,
-        backgroundColor: "powderblue"
+        backgroundColor: "white"
     },
     fadingText: {
         fontSize: 28
@@ -58,7 +58,8 @@ const styles = StyleSheet.create({
     buttonRow: {
         flexBasis: 100,
         justifyContent: "space-evenly",
-        marginVertical: 16
+        marginVertical: 16,
+        
     }
 });
 

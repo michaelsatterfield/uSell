@@ -1,10 +1,15 @@
 
 import React from 'react';
-import { StyleSheet, Text, View, SafeAreaView, Image, TouchableOpacity, TouchableHighlight, Button, Alert, Platform, StatusBar} from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView, Image, TouchableOpacity,
+          TouchableHighlight, Button, Alert, Platform,
+          StatusBar, Dimensions,}
+          from 'react-native';
 import AnimatedButton from './components/AnimatedButton'
 
 
 export default function App() {
+console.log(Dimensions.get('screen'));
+
 const handlePress = () => console.log("Text Clicked");
   //only use console logs during development not production
   console.log("app executed")
@@ -14,8 +19,14 @@ const handlePress = () => console.log("Text Clicked");
     <SafeAreaView style={[styles.container, containerStyle]}>
       <Text numberOfLines={1} onPress={handlePress} style={styles.titleText}>uSell</Text>
       <Text>Michael Satterfield</Text>
-      <TouchableHighlight onPress={()=> alert("Picture pressed")}>
-        
+      <View style={{
+        backgroundColor: 'goldenrod',
+        width: '100%',
+        height: '20%'
+
+      }}></View>
+      {/* <TouchableHighlight onPress={()=> alert("Picture pressed")}>
+
       <Image
           // blurRadius={2}
           fadeDuration={1000}
@@ -25,9 +36,9 @@ const handlePress = () => console.log("Text Clicked");
         borderRadius: 100,
           uri: "https://picsum.photos/200/300"
         }}/>
-      {/*<Image source={require("./assets/favicon.png")}/>*/}
-      </TouchableHighlight>
-      <Button title={"Start"}
+      <Image source={require("./assets/favicon.png")}/>
+      </TouchableHighlight> */}
+      <Button style={styles.container} title={"Start"}
               onPress={()=> Alert.prompt("My Title", "My Message", text => console.log(text))}
               />
       <StatusBar style="auto" />
