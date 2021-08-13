@@ -1,8 +1,8 @@
 
 import React from 'react';
-import { StyleSheet, Text, View, SafeAreaView, Image, TouchableOpacity, 
-          TouchableHighlight, Button, Alert, Platform, 
-          StatusBar, Dimensions} 
+import { StyleSheet, Text, View, SafeAreaView, Image, TouchableOpacity,
+          TouchableHighlight, Button, Alert, Platform,
+          StatusBar, Dimensions,}
           from 'react-native';
 import AnimatedButton from './components/AnimatedButton'
 
@@ -21,12 +21,12 @@ const handlePress = () => console.log("Text Clicked");
       <Text>Michael Satterfield</Text>
       <View style={{
         backgroundColor: 'goldenrod',
-        width: '50%',
-        height: '20%' 
+        width: '100%',
+        height: '20%'
 
       }}></View>
       {/* <TouchableHighlight onPress={()=> alert("Picture pressed")}>
-        
+
       <Image
           // blurRadius={2}
           fadeDuration={1000}
