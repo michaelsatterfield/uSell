@@ -4,7 +4,9 @@ import { StyleSheet, Text, View, SafeAreaView, Image, TouchableOpacity,
           TouchableHighlight, Button, Alert, Platform,
           StatusBar, Dimensions,}
           from 'react-native';
-import AnimatedButton from './components/AnimatedButton'
+import AnimatedButton from './components/AnimatedButton';
+//to get dimensions of screen in either portrait or landscape
+import { useDimensions, useDeviceOrientation } from '@react-native-community/hooks';
 
 
 export default function App() {
