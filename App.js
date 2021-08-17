@@ -10,7 +10,7 @@ import { useDimensions, useDeviceOrientation } from '@react-native-community/hoo
 
 
 export default function App() {
-console.log(Dimensions.get('screen'));
+const { landscape }= useDeviceOrientation();
 
 const handlePress = () => console.log("Text Clicked");
   //only use console logs during development not production
@@ -24,7 +24,7 @@ const handlePress = () => console.log("Text Clicked");
       <View style={{
         backgroundColor: 'goldenrod',
         width: '100%',
-        height: '20%'
+        height: landscape ? '100%' : '30%'
 
       }}></View>
       {/* <TouchableHighlight onPress={()=> alert("Picture pressed")}>
