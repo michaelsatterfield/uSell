@@ -28,7 +28,7 @@ export default function App() {
   console.log("app executed");
 
   return (
-    <View
+    <View //container
       style={{
         backgroundColor: "white",
         flex: 1,
@@ -41,14 +41,15 @@ export default function App() {
         style={{
           backgroundColor: "blue",
           width: 100,
-          height: 100,
+          height: 300,
+          alignSelf: "flex-start", //individual item
         }}
       />
       <View
         style={{
           backgroundColor: "goldenrod",
           width: 100,
-          height: 100,
+          height: 200,
         }}
       />
       <View
