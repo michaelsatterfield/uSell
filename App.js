@@ -32,24 +32,28 @@ export default function App() {
       style={{
         backgroundColor: "white",
         flex: 1,
+        flexDirection: "row",
       }}
     >
       <View
         style={{
           backgroundColor: "blue",
-          flex: 0.5,
+          width: 100,
+          height: 100,
         }}
       />
       <View
         style={{
           backgroundColor: "goldenrod",
-          flex: 1,
+          width: 100,
+          height: 100,
         }}
       />
       <View
         style={{
-          backgroundColor: "white",
-          flex: 1,
+          backgroundColor: "tomato",
+          width: 100,
+          height: 100,
         }}
       />
     </View>
