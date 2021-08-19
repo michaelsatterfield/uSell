@@ -28,28 +28,35 @@ export default function App() {
   console.log("app executed");
 
   return (
-    <View
+    <View //container
       style={{
         backgroundColor: "white",
         flex: 1,
+        flexDirection: "row", // horizontal
+        justifyContent: "center", //main axis
+        alignItems: "center", //secondary axis
       }}
     >
       <View
         style={{
           backgroundColor: "blue",
-          flex: 0.5,
+          width: 100,
+          height: 300,
+          alignSelf: "flex-start", //individual item
         }}
       />
       <View
         style={{
           backgroundColor: "goldenrod",
-          flex: 1,
+          width: 100,
+          height: 200,
         }}
       />
       <View
         style={{
-          backgroundColor: "white",
-          flex: 1,
+          backgroundColor: "tomato",
+          width: 100,
+          height: 100,
         }}
       />
     </View>
