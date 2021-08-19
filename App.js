@@ -32,7 +32,9 @@ export default function App() {
       style={{
         backgroundColor: "white",
         flex: 1,
-        flexDirection: "row",
+        flexDirection: "row", // horizontal
+        justifyContent: "center", //main axis
+        alignItems: "center", //secondary axis
       }}
     >
       <View
