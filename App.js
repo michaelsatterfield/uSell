@@ -31,7 +31,7 @@ export default function App() {
   //only use console logs during development not production
   console.log("app executed");
 
-  return <WelcomeScreen />;
+  return <ViewImageScreen />;
 }
 
 // ********************************original_section******************************8***********
