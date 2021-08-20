@@ -1,31 +1,31 @@
 import React from "react";
-import { ImageBackground, View, Text, StyleSheet } from "react-native";
+import { ImageBackground, View, StyleSheet, Text } from "react-native";
 
-const bgImage = require("../assets/background.jpg");
+const bgImage = require("../app/assets/background.jpg");
 
 const WelcomeScreen = () => (
-  <View style={styles.container}>
-    <ImageBackground source={bgImage} resizeMode="cover" style={styles.image}>
-      <Text style={styles.text}>uSell</Text>
-    </ImageBackground>
-  </View>
+  <ImageBackground
+    source={bgImage}
+    resizeMode="cover"
+    style={styles.background}
+  >
+    <View style={styles.loginButton}></View>
+    <View style={styles.logoutButton}></View>
+  </ImageBackground>
 );
 
 const styles = StyleSheet.create({
-  container: {
+  background: {
     flex: 1,
+    justifyContent: "flex-end",
   },
-  image: {
-    flex: 1,
-    justifyContent: "center",
+  loginButton: {
+    backgroundColor: "#fc5c65",
+    flex: 0.1,
   },
-  text: {
-    color: "white",
-    fontSize: 42,
-    lineHeight: 84,
-    fontWeight: "bold",
-    textAlign: "center",
-    backgroundColor: "#000000c0",
+  logoutButton: {
+    backgroundColor: "#4ECDC4",
+    flex: 0.1,
   },
 });
 
