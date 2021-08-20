@@ -20,6 +20,10 @@ import {
   useDeviceOrientation,
 } from "@react-native-community/hooks";
 
+import WelcomeScreen from "./screens folder/WelcomeScreen";
+
+import ViewImageScreen from "./screens folder/ViewImageScreen";
+
 export default function App() {
   const { landscape } = useDeviceOrientation();
 
@@ -27,57 +31,7 @@ export default function App() {
   //only use console logs during development not production
   console.log("app executed");
 
-  return (
-    <View //container
-      style={{
-        backgroundColor: "white",
-        flex: 1,
-        flexDirection: "row", // horizontal
-        justifyContent: "center", //main axis
-        alignItems: "center", //secondary axis
-        alignContent: "center",
-        flexWrap: "wrap",
-      }}
-    >
-      <View
-        style={{
-          backgroundColor: "blue",
-          width: 100,
-          height: 300,
-
-          // alignSelf: "flex-start", //individual item
-        }}
-      />
-      <View
-        style={{
-          backgroundColor: "goldenrod",
-          width: 100,
-          height: 100,
-        }}
-      />
-      <View
-        style={{
-          backgroundColor: "tomato",
-          width: 100,
-          height: 100,
-        }}
-      />
-      <View
-        style={{
-          backgroundColor: "grey",
-          width: 100,
-          height: 100,
-        }}
-      />
-      <View
-        style={{
-          backgroundColor: "greenyellow ",
-          width: 100,
-          height: 100,
-        }}
-      />
-    </View>
-  );
+  return <ViewImageScreen />;
 }
 
 // ********************************original_section******************************8***********
