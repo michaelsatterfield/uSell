@@ -1,6 +1,8 @@
 import React from "react";
 import { ImageBackground, View, StyleSheet, Text } from "react-native";
 
+import colors from "../app/config/colors";
+
 const bgImage = require("../app/assets/chair.jpg");
 
 const ViewImageScreen = () => {
@@ -23,7 +25,7 @@ const ViewImageScreen = () => {
 
 const styles = StyleSheet.create({
   closeIcon: {
-    backgroundColor: "#fc5c65",
+    backgroundColor: colors.primary,
     width: 50,
     height: 50,
     position: "absolute",
@@ -31,11 +33,11 @@ const styles = StyleSheet.create({
     left: "10%",
   },
   container: {
-    backgroundColor: "#000",
+    backgroundColor: colors.black,
     flex: 1,
   },
   deleteIcon: {
-    backgroundColor: "#4ECDC4",
+    backgroundColor: colors.secondary,
     width: 50,
     height: 50,
     position: "absolute",
@@ -52,7 +54,7 @@ const styles = StyleSheet.create({
     lineHeight: 84,
     fontWeight: "bold",
     textAlign: "center",
-    backgroundColor: "#000000c0",
+    backgroundColor: colors.black,
   },
 });
 
