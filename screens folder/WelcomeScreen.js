@@ -17,7 +17,7 @@ const WelcomeScreen = () => {
           style={styles.logo}
           source={require("../app/assets/logo-red.png")}
         />
-        <Text>Sell Your Stuff</Text>
+        <Text style={styles.text}>uSELl</Text>
       </View>
       <View style={styles.loginButton}></View>
       <View style={styles.registerButton}></View>
@@ -49,6 +49,9 @@ const styles = StyleSheet.create({
     position: "absolute",
     top: 70,
     alignItems: "center",
+  },
+  text: {
+    fontFamily: "roboto",
   },
 });
 
