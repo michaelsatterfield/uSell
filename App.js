@@ -31,7 +31,29 @@ export default function App() {
   //only use console logs during development not production
   console.log("app executed");
 
-  return <ViewImageScreen />;
+  return (
+    <View
+      style={{
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <View
+        style={{
+          backgroundColor: "blue",
+          height: 100,
+          width: 100,
+          borderWidth: 10,
+          borderRadius: 40,
+          borderColor: "royalblue",
+          borderTopLeftRadius: 100,
+        }}
+      >
+        <Text style={{ top: 30, left: 10, fontSize: 20 }}>uSELL</Text>
+      </View>
+    </View>
+  );
 }
 
 // ********************************original_section******************************8***********
