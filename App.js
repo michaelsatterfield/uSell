@@ -24,6 +24,8 @@ import WelcomeScreen from "./screens folder/WelcomeScreen";
 
 import ViewImageScreen from "./screens folder/ViewImageScreen";
 
+import AppText from "./components/AppText";
+
 export default function App() {
   const { landscape } = useDeviceOrientation();
 
@@ -39,19 +41,17 @@ export default function App() {
         alignItems: "center",
       }}
     >
-      <View
-        style={{
-          backgroundColor: "blue",
-          height: 100,
-          width: 100,
-          borderWidth: 10,
-          borderRadius: 40,
-          borderColor: "royalblue",
-          borderTopLeftRadius: 100,
+      <AppText>
+        style=
+        {{
+          // fontFamily: ,
+          fontSize: 30,
+          fontStyle: "italic",
+          fontWeight: "bold",
+          textTransform: "",
         }}
-      >
-        <Text style={{ top: 30, left: 10, fontSize: 20 }}>uSELL</Text>
-      </View>
+        > uSELL
+      </AppText>
     </View>
   );
 }

@@ -17,7 +17,7 @@ const ViewImageScreen = () => {
         resizeMode="contain"
         style={styles.image}
       >
-        {/* <Text style={styles.text}>uSell</Text> */}
+        <Text style={styles.text}>uSell</Text>
       </ImageBackground>
     </View>
   );
