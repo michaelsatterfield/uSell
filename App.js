@@ -13,12 +13,12 @@ import {
   StatusBar,
   Dimensions,
 } from "react-native";
-import AnimatedButton from "./components/AnimatedButton";
 //to get dimensions of screen in either portrait or landscape
 import {
   useDimensions,
   useDeviceOrientation,
 } from "@react-native-community/hooks";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 import WelcomeScreen from "./screens folder/WelcomeScreen";
 
@@ -41,17 +41,9 @@ export default function App() {
         alignItems: "center",
       }}
     >
-      <AppText>
-        style=
-        {{
-          // fontFamily: ,
-          fontSize: 30,
-          fontStyle: "italic",
-          fontWeight: "bold",
-          textTransform: "",
-        }}
-        > uSELL
-      </AppText>
+      <AppText> uSELL</AppText>
+
+      <MaterialCommunityIcons name="email" size={200} color="tomato" />
     </View>
   );
 }
