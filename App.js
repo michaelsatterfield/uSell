@@ -41,7 +41,7 @@ export default function App() {
         alignItems: "center",
       }}
     >
-      <AppText> uSELL</AppText>
+      <AppText>uSELL</AppText>
 
       <MaterialCommunityIcons name="email" size={200} color="tomato" />
     </View>
