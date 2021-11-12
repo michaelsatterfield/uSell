@@ -17,7 +17,7 @@ const WelcomeScreen = () => {
           style={styles.logo}
           source={require("../app/assets/logo-red.png")}
         />
-        <Text style={styles.text}>uSELl</Text>
+        <Text style={styles.text}>IMG APP</Text>
       </View>
       <View style={styles.loginButton}></View>
       <View style={styles.registerButton}></View>
