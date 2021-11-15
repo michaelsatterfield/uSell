@@ -24,7 +24,7 @@ import WelcomeScreen from "./screens folder/WelcomeScreen";
 
 import ViewImageScreen from "./screens folder/ViewImageScreen";
 
-import AppText from "./components/AppText";
+import AppText from "./components/AppText/AppText";
 
 export default function App() {
   const { landscape } = useDeviceOrientation();
