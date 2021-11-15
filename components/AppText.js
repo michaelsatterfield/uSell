@@ -7,23 +7,25 @@ function AppText({ children }) {
   return <Text style={styles.text}>{children}</Text>;
 }
 
-Platform.select({
-  ios: {
-    fontSize: 20,
-    fontFamily: " Avenir",
-  },
-  android: {
-    fontSize: 18,
-    fontFamily: "Roboto",
-  },
-});
+
 
 //stylesheet
 
 const styles = StyleSheet.create({
   text: {
-    fontSize: 20,
-    fontFamily: Platform.OS === "android" ? "Roboto" : "Avenir",
+    color: "tomato",
+    //spread operator....spreads the objects properties into the parent object
+    ...Platform.select({
+      ios: {
+        fontSize: 20,
+        fontFamily: " Avenir"
+      },
+      android: {
+        fontSize: 18,
+        fontFamily: "Roboto"
+      },
+    }),
+
   },
 });
 
