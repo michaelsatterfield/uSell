@@ -7,7 +7,6 @@ import {
   Image,
   TouchableOpacity,
   TouchableHighlight,
-  Button,
   Alert,
   Platform,
   StatusBar,
@@ -22,9 +21,12 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 import WelcomeScreen from "./screens folder/WelcomeScreen";
 
+import Button from "./components/Button";
+
 import ViewImageScreen from "./screens folder/ViewImageScreen";
 
 import AppText from "./components/AppText/AppText";
+import AnimatedButton from "./components/AnimatedButton";
 
 export default function App() {
   const { landscape } = useDeviceOrientation();
@@ -44,6 +46,7 @@ export default function App() {
       <AppText>Stuff</AppText>
 
       <MaterialCommunityIcons name="car-sports" size={300} color="tomato" />
+      <Button>Login</Button>
     </View>
   );
 }
