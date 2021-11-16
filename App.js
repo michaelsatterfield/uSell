@@ -46,7 +46,6 @@ export default function App() {
       <AppText>Stuff</AppText>
 
       <MaterialCommunityIcons name="car-sports" size={300} color="tomato" />
-      <Button>Login</Button>
     </View>
   );
 }

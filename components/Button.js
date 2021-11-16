@@ -15,7 +15,7 @@ function Button(props) {
 
 const styles = StyleSheet.create({
     button: {
-        backgroundColor:
+        backgroundColor: colors.primary
     }
 })
 
