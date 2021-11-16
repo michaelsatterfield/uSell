@@ -21,7 +21,7 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 import WelcomeScreen from "./screens folder/WelcomeScreen";
 
-import Button from "./components/Button";
+import AppButton from "./components/AppButton";
 
 import ViewImageScreen from "./screens folder/ViewImageScreen";
 
@@ -43,9 +43,10 @@ export default function App() {
         alignItems: "center",
       }}
     >
-      <AppText>Stuff</AppText>
+      {/*<AppText>Stuff</AppText>*/}
+      <AppButton title='Login' />
+      {/*<MaterialCommunityIcons name="car-sports" size={300} color="tomato" />*/}
 
-      <MaterialCommunityIcons name="car-sports" size={300} color="tomato" />
     </View>
   );
 }
