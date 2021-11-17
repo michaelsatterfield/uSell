@@ -36,18 +36,9 @@ export default function App() {
   console.log("app executed");
 
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      {/*<AppText>Stuff</AppText>*/}
-      <AppButton title='Login'  onPress={() => alert("pressed")}/>
-      {/*<MaterialCommunityIcons name="car-sports" size={300} color="tomato" />*/}
 
-    </View>
+      <WelcomeScreen/>
+
   );
 }
 

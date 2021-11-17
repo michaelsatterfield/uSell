@@ -9,9 +9,9 @@ import {
 import colors from "../app/config/colors";
 
 
-function AppButton({title, onPress}) {
+function AppButton({title, onPress, color}) {
     return (
-        <TouchableOpacity style={styles.button} onPress={onPress}>
+        <TouchableOpacity style={[styles.button, {backgroundColor: colors[color]}]} onPress={onPress}>
             <Text style={styles.text}>{title}</Text>
         </TouchableOpacity>
     );
