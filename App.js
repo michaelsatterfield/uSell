@@ -44,7 +44,7 @@ export default function App() {
       }}
     >
       {/*<AppText>Stuff</AppText>*/}
-      <AppButton title='Login' />
+      <AppButton title='Login'  onPress={() => alert("pressed")}/>
       {/*<MaterialCommunityIcons name="car-sports" size={300} color="tomato" />*/}
 
     </View>
