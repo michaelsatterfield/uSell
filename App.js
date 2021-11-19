@@ -26,7 +26,7 @@ import AppButton from "./components/AppButton";
 
 import ViewImageScreen from "./screens folder/ViewImageScreen";
 
-import AppText from "./components/AppText/AppText";
+
 import AnimatedButton from "./components/AnimatedButton";
 
 export default function App() {
@@ -44,11 +44,10 @@ export default function App() {
           padding: 20,
           paddingTop: 100
         }}>
-          <AppText>Hi</AppText>
       <Card
-          title="Red jacket for sale"
-          subTitle="$100"
           image={require("./app/assets/jacket.jpg")}
+          subTitle="$100"
+          title="Red jacket for sale"
       />
       </View>
 
