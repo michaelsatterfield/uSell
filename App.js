@@ -20,6 +20,7 @@ import {
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 import WelcomeScreen from "./screens folder/WelcomeScreen";
+import Card from "./components/Card";
 
 import AppButton from "./components/AppButton";
 
@@ -36,9 +37,14 @@ export default function App() {
   console.log("app executed");
 
   return (
-
-      <WelcomeScreen/>
-
+<View>
+      {/*<WelcomeScreen/>*/}
+      <Card
+          title={"Red jacket for sale"}
+          subTitle={"$100"}
+          image={require"./app/assets"}
+      />
+</View>
   );
 }
 
