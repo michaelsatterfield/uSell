@@ -1,13 +1,13 @@
 import React from 'react';
-import {View, StyleSheet, Image} from "react-native-web";
+import {View, StyleSheet, Image} from "react-native";
 
 import colors from "../app/config/colors";
 import AppText from "./AppText/AppText";
 
-const Card = (title, subTitle, Image) => {
+function Card({ title, subTitle, image }) {
     return (
         <View style={styles.card}>
-            <Image source={require(image)} />
+            <Image source={image} />
             <AppText>{title}</AppText>
             <AppText>{subTitle}</AppText>
         </View>

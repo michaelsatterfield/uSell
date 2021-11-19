@@ -1,16 +1,16 @@
 import React from "react";
 import {
-  StyleSheet,
-  Text,
-  View,
-  SafeAreaView,
-  Image,
-  TouchableOpacity,
-  TouchableHighlight,
-  Alert,
-  Platform,
-  StatusBar,
-  Dimensions,
+    StyleSheet,
+    Text,
+    View,
+    SafeAreaView,
+    Image,
+    TouchableOpacity,
+    TouchableHighlight,
+    Alert,
+    Platform,
+    StatusBar,
+    Dimensions, TextComponent,
 } from "react-native";
 //to get dimensions of screen in either portrait or landscape
 import {
@@ -30,21 +30,28 @@ import AppText from "./components/AppText/AppText";
 import AnimatedButton from "./components/AnimatedButton";
 
 export default function App() {
-  const { landscape } = useDeviceOrientation();
-
-  const handlePress = () => console.log("Text Clicked");
-  //only use console logs during development not production
-  console.log("app executed");
+  // const { landscape } = useDeviceOrientation();
+  //
+  // const handlePress = () => console.log("Text Clicked");
+  // //only use console logs during development not production
+  // console.log("app executed");
 
   return (
-<View>
-      {/*<WelcomeScreen/>*/}
+
+      <View
+        style={{
+          backgroundColor: "#f8f4f4",
+          padding: 20,
+          paddingTop: 100
+        }}>
+          <AppText>Hi</AppText>
       <Card
-          title={"Red jacket for sale"}
-          subTitle={"$100"}
-          image={require"./app/assets"}
+          title="Red jacket for sale"
+          subTitle="$100"
+          image={require("./app/assets/jacket.jpg")}
       />
-</View>
+      </View>
+
   );
 }
 
@@ -99,3 +106,5 @@ export default function App() {
 //     color: '#fff'
 //   }
 // })
+
+
