@@ -32,7 +32,7 @@ import AnimatedButton from "./components/AnimatedButton";
 export default function App() {
   // const { landscape } = useDeviceOrientation();
   //
-  // const handlePress = () => console.log("Text Clicked");
+  const handlePress = () => console.log("Text Clicked");
   // //only use console logs during development not production
   // console.log("app executed");
 
@@ -56,16 +56,6 @@ export default function App() {
 
 // ********************************original_section******************************8***********
 
-//     <SafeAreaView style={[styles.container, containerStyle]}>
-//       <Text numberOfLines={1} onPress={handlePress} style={styles.titleText}>uSell</Text>
-//       <Text>Michael Satterfield</Text>
-//       <View style={{
-//         backgroundColor: 'goldenrod',
-//         width: '100%',
-//         height: landscape ? '100%' : '30%'
-
-//       }}></View>
-//       {/* <TouchableHighlight onPress={()=> alert("Picture pressed")}>
 
 //       <Image
 //           // blurRadius={2}
