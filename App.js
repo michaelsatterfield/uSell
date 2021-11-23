@@ -54,30 +54,5 @@ export default function App() {
   );
 }
 
-// ********************************original_section******************************8***********
-
-
-//       <Image
-//           // blurRadius={2}
-//           fadeDuration={1000}
-//           source={{
-//         width:200,
-//         height:300,
-//         borderRadius: 100,
-//           uri: "https://picsum.photos/200/300"
-//         }}/>
-//       <Image source={require("./assets/favicon.png")}/>
-//       </TouchableHighlight> */}
-//       <Button style={styles.container} title={"Start"}
-//               onPress={()=> Alert.prompt("My Title", "My Message", text => console.log(text))}
-//               />
-//       <StatusBar style="auto" />
-//       <AnimatedButton/>
-//     </SafeAreaView>
-//   );
-// }
-// const containerStyle = {backgroundColor: "red"}
-
-
 
 
