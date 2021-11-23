@@ -88,22 +88,5 @@ export default function App() {
 // }
 // const containerStyle = {backgroundColor: "red"}
 
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     backgroundColor: '#f55252',
-//     alignItems: 'center',
-//     justifyContent: 'center',
-//     paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
-
-//   },
-//   titleText: {
-
-//     fontSize: 100,
-//     fontWeight: 'bold',
-//     fontFamily: 'Roboto',
-//     color: '#fff'
-//   }
-// })
 
 
