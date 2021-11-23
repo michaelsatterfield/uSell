@@ -69,7 +69,7 @@ export default function App() {
 
 //       <Image
 //           // blurRadius={2}
-//           fadeDuration={1000}
+//           fadeDuration=
 //           source={{
 //         width:200,
 //         height:300,
