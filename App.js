@@ -30,11 +30,10 @@ import ViewImageScreen from "./screens folder/ViewImageScreen";
 import AnimatedButton from "./components/AnimatedButton";
 
 export default function App() {
-  // const { landscape } = useDeviceOrientation();
-  //
-  // const handlePress = () => console.log("Text Clicked");
+
+  const handlePress = () => console.log("Text Clicked");
   // //only use console logs during development not production
-  // console.log("app executed");
+
 
   return (
 
@@ -53,40 +52,6 @@ export default function App() {
 
   );
 }
-
-// ********************************original_section******************************8***********
-
-//     <SafeAreaView style={[styles.container, containerStyle]}>
-//       <Text numberOfLines={1} onPress={handlePress} style={styles.titleText}>uSell</Text>
-//       <Text>Michael Satterfield</Text>
-//       <View style={{
-//         backgroundColor: 'goldenrod',
-//         width: '100%',
-//         height: landscape ? '100%' : '30%'
-
-//       }}></View>
-//       {/* <TouchableHighlight onPress={()=> alert("Picture pressed")}>
-
-//       <Image
-//           // blurRadius={2}
-//           fadeDuration=
-//           source={{
-//         width:200,
-//         height:300,
-//         borderRadius: 100,
-//           uri: "https://picsum.photos/200/300"
-//         }}/>
-//       <Image source={require("./assets/favicon.png")}/>
-//       </TouchableHighlight> */}
-//       <Button style={styles.container} title={"Start"}
-//               onPress={()=> Alert.prompt("My Title", "My Message", text => console.log(text))}
-//               />
-//       <StatusBar style="auto" />
-//       <AnimatedButton/>
-//     </SafeAreaView>
-//   );
-// }
-// const containerStyle = {backgroundColor: "red"}
 
 
 
