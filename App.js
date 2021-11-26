@@ -19,12 +19,12 @@ import {
 } from "@react-native-community/hooks";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
-import WelcomeScreen from "./screens folder/WelcomeScreen";
+
 import Card from "./components/Card";
 
-import AppButton from "./components/AppButton";
 
-import ViewImageScreen from "./screens folder/ViewImageScreen";
+
+
 
 
 import AnimatedButton from "./components/AnimatedButton";
