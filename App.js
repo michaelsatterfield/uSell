@@ -3,14 +3,7 @@ import {
     StyleSheet,
     Text,
     View,
-    SafeAreaView,
-    Image,
-    TouchableOpacity,
-    TouchableHighlight,
-    Alert,
-    Platform,
-    StatusBar,
-    Dimensions, TextComponent,
+
 } from "react-native";
 //to get dimensions of screen in either portrait or landscape
 import {
@@ -21,12 +14,6 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 
 import Card from "./components/Card";
-
-
-
-
-
-
 import AnimatedButton from "./components/AnimatedButton";
 
 export default function App() {
