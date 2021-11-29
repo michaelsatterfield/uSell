@@ -5,12 +5,7 @@ import {
     View,
 
 } from "react-native";
-//to get dimensions of screen in either portrait or landscape
-import {
-  useDimensions,
-  useDeviceOrientation,
-} from "@react-native-community/hooks";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
+
 
 
 import Card from "./components/Card";
@@ -23,7 +18,6 @@ export default function App() {
 
 
   return (
-
       <View
         style={{
           backgroundColor: "#f8f4f4",

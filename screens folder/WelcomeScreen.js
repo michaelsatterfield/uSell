@@ -1,9 +1,8 @@
 import React from 'react'
 import {ImageBackground, View, StyleSheet, Text, Image} from 'react-native'
 
-import colors from '../app/config/colors'
 import AppButton from '../components/AppButton'
-import ViewabilityHelper from 'react-native-web/dist/vendor/react-native/ViewabilityHelper'
+
 
 const bgImage = require('../app/assets/background.jpg')
 
