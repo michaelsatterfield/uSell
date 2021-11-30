@@ -21,7 +21,6 @@ const AnimatedButton = () => {
   };
 
   const fadeOut = () => {
-    // Will change fadeAnim value to 0 in 3 seconds
     Animated.timing(fadeAnim, {
       toValue: 0,
       duration: 3000,
