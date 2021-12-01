@@ -33,7 +33,6 @@ const AnimatedButton = () => {
         style={[
           styles.fadingContainer,
           {
-            // Bind opacity to animated value
             opacity: fadeAnim,
           },
         ]}

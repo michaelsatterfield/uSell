@@ -14,7 +14,7 @@ import AnimatedButton from "./components/AnimatedButton";
 export default function App() {
 
   const handlePress = () => console.log("Text Clicked");
-  // //only use console logs during development not production
+
 
 
   return (
