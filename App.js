@@ -5,7 +5,7 @@ import {
     View,
 
 } from "react-native";
-
+//ddsssd
 
 
 import Card from "./components/Card";
