@@ -9,7 +9,6 @@ import {
 
 
 import Card from "./components/Card";
-import AnimatedButton from "./components/AnimatedButton";
 
 export default function App() {
 
