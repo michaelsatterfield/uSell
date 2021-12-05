@@ -3,7 +3,6 @@ import {ImageBackground, View, StyleSheet, Text, Image} from 'react-native'
 
 import AppButton from '../components/AppButton'
 
-
 const bgImage = require('../app/assets/background.jpg')
 
 const WelcomeScreen = () => {
@@ -49,8 +48,6 @@ const styles = StyleSheet.create({
         fontSize: 25,
         fontWeight: "600",
         paddingVertical: 20,
-
-
     },
     buttonsContainer: {
         width: '100%',
