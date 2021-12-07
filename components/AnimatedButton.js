@@ -18,7 +18,7 @@ const AnimatedButton = () => {
       duration: 5000,
     }).start();
   };
-
+//s;ldakf
   const fadeOut = () => {
     Animated.timing(fadeAnim, {
       toValue: 0,
