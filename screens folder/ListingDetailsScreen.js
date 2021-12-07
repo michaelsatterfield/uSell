@@ -2,13 +2,15 @@ import React from 'react';
 import {Image, View, StyleSheet}  from 'react-native';
 import AppText from "../components/AppText";
 
+import colors from "../app/config/colors";
+
 const ListingDetailsScreen = () => {
     return (
         <View>
     <Image style={styles.image} source={require('../app/assets/jacket.jpg')}/>
             <View style={styles.detailsContainer}>
-            <AppText style={styles.tile}>Red jacket for sale</AppText>
-            <AppText>$100</AppText>
+            <AppText style={styles.title}>Red jacket for sale</AppText>
+            <AppText style={styles.price}>$100</AppText>
             </View>
         </View>
     );
@@ -22,8 +24,15 @@ const styles = StyleSheet.create({
         width: '100%',
         height: 300
     },
+    price: {
+        color: colors.secondary,
+        fontWeight: "bold",
+        fontSize: 20,
+        marginVertical: 10
+    },
     title: {
-
+        fontSize: 24,
+        fontWeight: "500",
     }
 })
 
