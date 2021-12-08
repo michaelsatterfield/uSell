@@ -10,8 +10,8 @@ function ListItem({image, title, subtitle}) {
         <View style={styles.container}>
             <Image style={styles.image}  source={image} />
             <View>
-                <AppText>{title}</AppText>
-                <AppText>{subtitle}</AppText>
+                <AppText style={styles.title}>{title}</AppText>
+                <AppText style={styles.subTitle}>{subtitle}</AppText>
             </View>
 
         </View>
@@ -28,6 +28,12 @@ const styles = StyleSheet.create({
         borderRadius: 35,
         marginRight: 10
 
+    },
+    subTitle: {
+          color: '#6e6969'
+    },
+    title: {
+       fontWeight: "500",
     }
 })
 
