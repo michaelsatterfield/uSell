@@ -8,9 +8,10 @@ import {
 
 import Card from "./components/Card";
 import ListingDetailsScreen from "./screens folder/ListingDetailsScreen";
+import ViewImageScreen from "./screens folder/ViewImageScreen";
 
 export default function App() {
-    return <ListingDetailsScreen />
+    return <ViewImageScreen/>
 
 
 }
