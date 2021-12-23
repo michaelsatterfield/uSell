@@ -2,6 +2,7 @@ import React from 'react';
 import {View, StyleSheet, Image} from "react-native";
 import AppText from "./AppText";
 
+import colors from "../app/config/colors";
 
 
 
@@ -30,7 +31,7 @@ const styles = StyleSheet.create({
 
     },
     subTitle: {
-          color: '#6e6969'
+          color: colors.medium,
     },
     title: {
        fontWeight: "500",

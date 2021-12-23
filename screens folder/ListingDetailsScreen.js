@@ -13,11 +13,14 @@ const ListingDetailsScreen = () => {
             <View style={styles.detailsContainer}>
             <AppText style={styles.title}>Red jacket for sale</AppText>
             <AppText style={styles.price}>$100</AppText>
+
+                <View style={styles.userContainer}>
                 <ListItem
                     image={require("../app/assets/mosh.jpg")}
                     title="Mosh"
                     subtitle="5 Listings"
                 />
+                </View>
             </View>
         </View>
     );
@@ -40,7 +43,10 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 24,
         fontWeight: "500",
-    }
+    },
+    userContainer: {
+       marginVertical: 40,
+    },
 })
 
 
