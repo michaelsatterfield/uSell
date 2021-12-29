@@ -10,11 +10,11 @@ const ViewImageScreen = () => {
   return (
     <View style={styles.container}>
       <View style={styles.closeIcon} >
-        <MaterialCommunityIcons name={"close"} color={"white"} size={30}/>
+        <MaterialCommunityIcons name={"close"} color={"white"} size={35}/>
       </View>
 
       <View style={styles.deleteIcon}>
-        <MaterialCommunityIcons name={"trash-can-outline"} color={"white"} size={30}/>
+        <MaterialCommunityIcons name={"trash-can-outline"} color={"white"} size={35}/>
       </View>
 
       <ImageBackground
