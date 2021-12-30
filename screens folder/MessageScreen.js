@@ -30,7 +30,6 @@ const MessageScreen = () => {
                         image={item.image}
                     />
                 }
-
             />
         </SafeAreaView>
     );
