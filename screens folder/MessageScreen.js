@@ -24,21 +24,25 @@ const messages = [
 
 const MessageScreen = () => {
     return (
-     <Screen>
+        <Screen>
             <FlatList
                 data={messages}
-                keyExtractor={message => message.id.toString()}
-                renderItem={({item}) =>
+                keyExtractor={(message) => message.id.toString()}
+                renderItem={({ item }) => (
                     <ListItem
                         title={item.title}
-                        subtitle={item.description}
+                        subTitle={item.description}
                         image={item.image}
+                        onPress={() => console.log("Message selected", item)}
+                        renderRightActions={() => (
+                            <ListItemDeleteAction onPress={() => handleDelete(item)} />
+                        )}
                     />
-                }
-                // ItemSeparatorComponent={ListItemSeparator}
+                )}
+                ItemSeparatorComponent={ListItemSeparator}
 
             />
-     </Screen>
+        </Screen>
     );
 };
 
