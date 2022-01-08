@@ -1,8 +1,9 @@
 import React from 'react';
-import {FlatList, StyleSheet, View} from 'react-native';
+import {FlatList, StyleSheet} from 'react-native';
 
 import ListItem from "../components/ListItem";
 import Screen from "../components/Screen";
+import ListItemSeparator from "../components/ListItemSeparator";
 
 
 
@@ -34,8 +35,8 @@ const MessageScreen = () => {
                         image={item.image}
                     />
                 }
-                ItemSeparatorComponent={() =>
-                    <View style={{ width: "100", height: 1, backgroundColor: "#000"}} /> }
+                // ItemSeparatorComponent={ListItemSeparator}
+
             />
      </Screen>
     );
